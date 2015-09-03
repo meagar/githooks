@@ -18,7 +18,7 @@
 #  - Make sure you have Ruby installed
 #
 # USAGE:
-#  Forget this script exists until you accidentally stage a "bidning.pry" and are
+#  Forget this script exists until you accidentally stage a "binding.pry" and are
 #  prevented from committing your changes by it
 #
 
@@ -27,6 +27,7 @@ TESTS = [
   /(#|\/\/) ?NO ?COMMIT/,
   /\bdebugger\b/,
   /\bbinding\.pry\b/,
+  /\bbyebug\b/,
   /\bconsole\.(log|dir|debug|warn|error|count|profile|profileEnd|trace)\b/,
 ]
 
